@@ -1,0 +1,13 @@
+services:
+  app:
+    deploy:
+    port:
+      - "5001:5000"
+    environment:
+      - DATABASE_URL=postgresql://postgres:admin1234@db_stack_e/cetech
+    networks:
+      - red_swarm_e
+
+networks:
+  red_swarm_e:
+    external: true
