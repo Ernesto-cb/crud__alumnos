@@ -1,7 +1,7 @@
 services:
   app:
-    deploy:
-    port:
+    image: ernesto05itsjr/crud_estudiantes:latest
+    ports:
       - "5001:5000"
     environment:
       - DATABASE_URL=postgresql://postgres:admin1234@db_stack_e/cetech
