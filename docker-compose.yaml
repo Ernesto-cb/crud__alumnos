@@ -4,7 +4,7 @@ services:
     ports:
       - "5001:5000"
     environment:
-      - DATABASE_URL=postgresql://postgres:admin1234@db_stack_e/cetech
+      - DATABASE_URL=postgresql://postgres:admin1234@db/cetech
     networks:
       - red_swarm_e
 
